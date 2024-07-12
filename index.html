@@ -1,6 +1,6 @@
 <head>   
 <script>
-    var __cbSdkHost = "https://tester-vg-1.cbinternal.com/";
+    var __cbSdkHost = "https://vg-ahsdk-test-jul10-tester1.vitaliy.cbinternal.com/";
     var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
     "host":__cbSdkHost,"globalVar":"cbq",}};
     !function(a,h,e,v,n,t,s)
@@ -10,10 +10,10 @@
       n.queue=[];t=h.createElement(e);t.async=!0;
       t.src=v;s=h.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
-      "https://d195vred4bpt9v.cloudfront.net/"+'sdk/capig-events.js');
-    cbq('init', "8142910021180948290");
-    cbq('loadConfig', "8142910021180948290");
-    cbq('track', 'PageViewWebsite-2');
+      "https://d3dlrapqtmga98.cloudfront.net/"+'sdk/capig-events.js');
+    cbq('init', "8651729391141098094");
+    cbq('loadConfig', "8651729391141098094");
+    cbq('track', 'PageView');
     </script>
     
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
@@ -42,10 +42,9 @@ document.getElementById('checkoutButton').addEventListener('click', function() {
   cbq('track', 'InitiateCheckout');
 }, false);
 document.getElementById('purchaseButton').addEventListener('click', function() {
-  cbq('track', 'Purchase', {
-    value: 100,
-    currency: 'USD',
-  });
+cbq('track', 'Purchase', {
+currency: 'USD',
+});
 }, false);
 document.getElementById('subcribeButton').addEventListener('click', function() {
   cbq('track', 'Subscribe');
