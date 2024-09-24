@@ -29,6 +29,7 @@ src="https://www.facebook.com/tr?id=1053310742044203&ev=PageView&noscript=1"
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
+        <li><button id="registrationButton" type="button">Event Button</button></li>
     </ul>
     </div>
 
@@ -58,6 +59,10 @@ document.getElementById('subcribeButton').addEventListener('click', function() {
 
 document.getElementById('registrationButton').addEventListener('click', function() {
   fbq('track', 'CompleteRegistration');
+}, false);
+
+document.getElementById('registrationButton').addEventListener('click', function() {
+  fbq('track', 'EventButton');
 }, false);
 </script>
 </body>
