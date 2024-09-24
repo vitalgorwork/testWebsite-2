@@ -28,8 +28,8 @@ src="https://www.facebook.com/tr?id=1053310742044203&ev=PageView&noscript=1"
         <li><button id="checkoutButton" type="button">Check Out</button></li>
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
-        <li><button id="registrationButton" type="button">Registration</button></li>
-        <li><button id="registrationButton" type="button">Event Button</button></li>
+        <li><button id="registrationButton" type="button">Registration VG</button></li>
+        <li><button id="registrationButton" type="button">Event_button</button></li>
     </ul>
     </div>
 
@@ -61,8 +61,11 @@ document.getElementById('registrationButton').addEventListener('click', function
   fbq('track', 'CompleteRegistration');
 }, false);
 
-document.getElementById('registrationButton').addEventListener('click', function() {
-  fbq('track', 'Event Button');
+document.getElementById('unverifiedEvent_button').addEventListener('click', function() {
+  cbq('track', 'unverifiedEvent', {
+    value: 100,
+    currency: 'USD'
+  });
 }, false);
 </script>
 </body>
