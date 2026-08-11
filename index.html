@@ -1,60 +1,114 @@
-<body style="background-color: #075c63; font-family: sans-serif; padding: 40px;">
-
-   <!-- ЛОГО -->
-  <div style="text-align: center; margin-bottom: 30px;">
-    <img src="flyVitaTransparent.png" alt="FlyVita Logo" style="height: 150px; margin: 10px auto; display: block;" />
-  </div>
-
-  <form action="https://formspree.io/f/mgvzygnj" method="POST" 
-    style="max-width: 600px; margin: 0 auto; padding: 2em; background: #ffffff; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.2);">
-    
-    <h2 style="text-align: center; font-size: 24px; margin-bottom: 20px; color: #075c63;">Request a quote for your flight</h2>
-
-    <label style="display: block; color: #333;">From:
-      <input type="text" name="from" placeholder="City or Airport" required 
-        style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;" />
-    </label>
-
-    <label style="display: block; color: #333;">To:
-      <input type="text" name="to" placeholder="City or Airport" required 
-        style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;" />
-    </label>
-
-    <label style="display: block; color: #333;">Departure Date:
-      <input type="date" name="departure" required 
-        style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;" />
-    </label>
-
-    <label style="display: block; color: #333;">Return Date:
-      <input type="date" name="return" 
-        style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;" />
-    </label>
-
-    <label style="display: block; color: #333;">Class:
-      <select name="class" required 
-        style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;">
-        <option>Business</option>
-        <option>First</option>
-        <option>Premium Economy</option>
-        <option>Economy</option>
-      </select>
-    </label>
-
-    <label style="display: block; color: #333;">Your Name:
-      <input type="text" name="name" required placeholder="Full Name" 
-        style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;" />
-    </label>
-
-    <label style="display: block; color: #333;">Email:
-      <input type="email" name="email" required placeholder="your@example.com" 
-        style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #ccc;" />
-    </label>
-
-    <button type="submit" 
-      style="width: 100%; padding: 12px; background-color: #0b6e76; color: white; font-weight: bold; border: none; border-radius: 8px;">
-      Request Quote
-    </button>
-
-  </form>
-
+<p>
+  Test SG Site (CBQ) <!-- Original & Modified Body code -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</p>
+<head>
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- Signals Gateway Pixel Code -->
+  <script>
+  !function(a,h,e,v,n,t,s)
+    {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=h.createElement(e);t.async=!0;
+    t.src=v;s=h.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://d3u6dhvu8pjuoq.cloudfront.net/sdk/1856508231853404105/events.js');
+    cbq('setHost', 'https://d3u6dhvu8pjuoq.cloudfront.net/');
+    cbq('init', '1856508231853404105');
+    cbq('track', 'PageView');
+  </script>
+<!-- End Signals Gateway Pixel Code -->
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- Modified CBQ body Code -->
+<meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
+<title>pixel test page</title>
+</head>
+<body> 
+<h2>pixel test page</h2>
+<div><ul>
+  <li><button id="addToWishlistButton" type="button">Add to Wishlist (x10)</button></li>
+  <li><button id="addToCartButton" type="button">Add to Cart (x10)</button></li>
+  <li><button id="checkoutButton" type="button">Check Out (x10)</button></li>
+  <li><button id="purchaseButton" type="button">Purchase (x10)</button></li>
+  <li><button id="subcribeButton" type="button">Subscribe (x10)</button></li>
+  <li><button id="registrationButton" type="button">Registration (x10)</button></li>
+</ul></div>
+<div><ul>
+  <li><button id="siteButton" type="button">Site 0 (x10)</button></li>
+  <li><button id="invalidpurchaseButton" type="button">Invalid Purchase (x10)</button></li>
+  <li><button id="searchButton" type="button">Search (x10)</button></li>
+  <li><button id="contactButton" type="button">Contact (x10)</button></li>
+  <li><button id="donateButton" type="button">Donate (x10)</button></li>
+  <li><button id="rateButton" type="button">Rate (x10)</button></li>
+  <li><button id="adClickButton" type="button">AdClick (x10)</button></li>
+  <li><button id="purchaseNoValueButton" type="button">Purchase With No Value (x10)</button></li>
+</ul></div>
+<script type="text/javascript">
+  for(var i = 0; i < 10; i++) {
+document.getElementById('siteButton').addEventListener('click', function() {cbq('track', 'Site0')}, false);
+document.getElementById('addToWishlistButton').addEventListener('click', function() {cbq('track', 'AddToWishlist'); }, false);
+document.getElementById('addToCartButton').addEventListener('click', function() {cbq('track', 'AddToCart');}, false);
+document.getElementById('checkoutButton').addEventListener('click', function() {cbq('track', 'InitiateCheckout');}, false);
+document.getElementById('purchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
+document.getElementById('subcribeButton').addEventListener('click', function() {cbq('track', 'Subscribe');}, false);
+document.getElementById('registrationButton').addEventListener('click', function() {cbq('track', 'CompleteRegistration');}, false);
+document.getElementById('invalidpurchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
+document.getElementById('searchButton').addEventListener('click', function() {cbq('track', 'Search'); }, false);    
+document.getElementById('contactButton').addEventListener('click', function() {cbq('track', 'Contact'); }, false);    
+document.getElementById('donateButton').addEventListener('click', function() {cbq('track', 'Donate'); }, false);    
+document.getElementById('rateButton').addEventListener('click', function() {cbq('track', 'Rate'); }, false);    
+document.getElementById('adClickButton').addEventListener('click', function() {cbq('track', 'AdClick'); }, false);
+document.getElementById('purchaseNoValueButton').addEventListener('click', function() {cbq('track', 'Purchase', {currency: 'USD',});}, false);
+}
+</script>
 </body>
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- Original CBQ body Code -->
+<!-- 
+<meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
+<title>pixel test page</title>
+</head>
+<body>
+    <h2>pixel test page</h2>
+    <div>
+    <ul>
+        <li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
+        <li><button id="addToCartButton" type="button">Add to Cart</button></li>
+        <li><button id="checkoutButton" type="button">Check Out</button></li>
+        <li><button id="purchaseButton" type="button">Purchase</button></li>
+        <li><button id="subcribeButton" type="button">Subscribe</button></li>
+        <li><button id="registrationButton" type="button">Registration</button></li>
+    </ul>
+    </div>
+  
+<script type="text/javascript">
+document.getElementById('addToWishlistButton').addEventListener('click', function() {
+  cbq('track', 'AddToWishlist');
+}, false);
+document.getElementById('addToCartButton').addEventListener('click', function() {
+  cbq('track', 'AddToCart');
+}, false);
+document.getElementById('checkoutButton').addEventListener('click', function() {
+  cbq('track', 'InitiateCheckout');
+}, false);
+document.getElementById('purchaseButton').addEventListener('click', function() {
+  cbq('track', 'Purchase', {
+    value: '100',
+    currency: 'USD',
+  });
+}, false);
+document.getElementById('subcribeButton').addEventListener('click', function() {
+  cbq('track', 'Subscribe');
+}, false);
+document.getElementById('registrationButton').addEventListener('click', function() {
+  cbq('track', 'CompleteRegistration');
+}, false);
+</script>
+</body>
+-->
+<!-- ---------------------------------------------------------------------------------- -->
